@@ -3,5 +3,5 @@ Vagrant.configure("2") do |config|
   config.vbguest.installer_options = { allow_kernel_upgrade: true }
   config.vm.hostname = "db001"
   config.vm.network "private_network", ip: "192.168.1.4"
-  config.vm.network "forwarded_port", guest: 3232, host: 3232
+  config.vm.network "forwarded_port", guest: 3306, host: 3306
 end
