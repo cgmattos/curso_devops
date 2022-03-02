@@ -4,7 +4,7 @@
   
   user: vagrant
   become: yes
-  var_files:
+  vars_files:
     - vars/main.yml
   vars:
     - dbname: "db001"
